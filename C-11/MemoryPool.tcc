@@ -35,7 +35,7 @@ const noexcept
 }
 
 
-
+//初始化
 template <typename T, size_t BlockSize>
 MemoryPool<T, BlockSize>::MemoryPool()
 noexcept
@@ -47,7 +47,7 @@ noexcept
 }
 
 
-
+//拷贝构造
 template <typename T, size_t BlockSize>
 MemoryPool<T, BlockSize>::MemoryPool(const MemoryPool& memoryPool)
 noexcept :
@@ -55,7 +55,7 @@ MemoryPool()
 {}
 
 
-
+//移动构造函数
 template <typename T, size_t BlockSize>
 MemoryPool<T, BlockSize>::MemoryPool(MemoryPool&& memoryPool)
 noexcept
@@ -67,7 +67,7 @@ noexcept
   freeSlots_ = memoryPool.freeSlots;
 }
 
-
+//
 template <typename T, size_t BlockSize>
 template<class U>
 MemoryPool<T, BlockSize>::MemoryPool(const MemoryPool<U>& memoryPool)
