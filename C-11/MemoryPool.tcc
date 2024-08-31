@@ -35,7 +35,7 @@ const noexcept
 }
 
 
-//初始化
+//构造函数
 template <typename T, size_t BlockSize>
 MemoryPool<T, BlockSize>::MemoryPool()
 noexcept
