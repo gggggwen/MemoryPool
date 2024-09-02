@@ -127,7 +127,7 @@ const noexcept
 }
 
 
-
+//分配内存块有点看不太懂
 template <typename T, size_t BlockSize>
 void
 MemoryPool<T, BlockSize>::allocateBlock()
